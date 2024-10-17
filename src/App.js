@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import About from './components/about';
+import Contact from './components/contact';
+import Gallery from './components/gallery';
+import Services from './components/services';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Welcome to the Tattoo Artist's Portfolio</h1>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </header>
+      
+      <main>
+        <section id="about">
+          <About />
+        </section>
+        <section id="gallery">
+          <Gallery />
+        </section>
+        <section id="services">
+          <Services />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
+
+      <footer>
+        <p>© 2024 Tattoo Artist Portfolio</p>
+      </footer>
     </div>
   );
 }
