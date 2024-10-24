@@ -47,7 +47,7 @@ function Gallery() {
 
     // Check if the puzzle is solved
     if (isPuzzleSolved(newPieces)) {
-      alert('Puzzle Solved!');
+      //alert('Puzzle Solved!');
     }
   };
 
