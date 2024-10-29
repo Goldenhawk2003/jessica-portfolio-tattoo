@@ -1,15 +1,20 @@
+
 import React from 'react';
 import './App.css';
+import Book from './components/Book';
 import About from './components/about';
 import Contact from './components/contact';
 import Gallery from './components/gallery';
 import Services from './components/services';
+
 
 function App() {
   return (
     <div className="App">
       <header>
         <h1>Welcome to the Tattoo Artist's Portfolio</h1>
+        <Book />
+
         <nav>
           <a href="#about">About</a>
           <a href="#gallery">Gallery</a>
